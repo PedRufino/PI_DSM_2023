@@ -4,7 +4,7 @@ Este projeto foi desenvolvido como parte dos requisitos obrigatórios do curso d
  <h3>Este projeto se concentra em conseguir notas em três disciplinas:  <br></h3>
   • Engenharia de Software I (disciplina satélite);<br>
   • Desenvolvimento Web I;<br>
-  • Design Digital<br>
+  • Design Digital;<br>
 
  <h4>Este projeto tem como foco o desenvolvimento individual e coletivo, bem como a criação de documentação de software. Ele representa uma evidência do nosso crescimento e esforço, preparando-nos para futuras oportunidades profissionais.<br></h4>
  
