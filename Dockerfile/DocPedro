@@ -1,0 +1,6 @@
+# Outras Config
+
+- docker ps
+- docker ps -a
+- docker stop <containerID>
+- docker rm <containerID>
