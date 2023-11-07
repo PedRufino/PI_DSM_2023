@@ -172,5 +172,27 @@ DarkGray: #2D2B29
         left: 40%;
     }
 }
+@media screen and (max-width: 600px) {
+    .circle-image {
+        margin-top: 11rem;
+        left: 40%;
+    }
+
+    .circle-image-two {
+        margin-top: 20rem;
+        left: 20%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .circle-image {
+        margin-top: 13rem;
+        left: 30%;
+    }
+
+    .circle-image-two {
+        margin-top: 19rem;
+        left: -30%;
+    }
+}
 
 /* Fim Image Circle */
