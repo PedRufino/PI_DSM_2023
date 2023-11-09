@@ -15,8 +15,22 @@ DarkGray: #2D2B29
     --Green: #00BF62;
     --Black: #000000;
     --DarkGray: #2D2B29;
-    --font-family: 'Public Sans';
+    --public-sans: 'Public Sans';
 }
+
+li{
+    font-family: var(--public-sans);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+
 /* Luz de fundo */
 
 .fundoligth{
@@ -79,8 +93,6 @@ DarkGray: #2D2B29
     text-decoration: none;
     display: block;
     padding: 10px 0;
-    font-family: var(--font-family);
-    font-weight: 700;
 }
 
 .navbar-nav li {
@@ -96,7 +108,7 @@ DarkGray: #2D2B29
     border: 1px solid #00743c;
     border-radius: 5px;
     cursor: pointer;
-    font-family: var(--font-family);
+    font-family: var(--public-sans);
     font-weight: 700;
 }
 
@@ -196,3 +208,28 @@ DarkGray: #2D2B29
 }
 
 /* Fim Image Circle */
+
+/* Rodapé */
+
+.ft-div{
+    width: 100%;
+    background-color: var(--DarkGray);
+    padding: 20px;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    
+}
+
+.footer-bar li{
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Fim do Rodapé */
