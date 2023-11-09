@@ -15,4 +15,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     };
 
+    var footer = document.querySelector("footer");
+    function updateFooter() {
+        var pageHeight = document.documentElement.scrollHeight;
+        var windowHeight = window.innerHeight;
+
+        if (pageHeight <= windowHeight) {
+            footer.style.position = "fixed";
+            footer.style.bottom = "0";
+            footer.style.width = "100%";
+        } else {
+            footer.style.bottom = "0";
+            footer.style.width = "100%";
+        }
+    }
+
+    updateFooter();
+
 });
