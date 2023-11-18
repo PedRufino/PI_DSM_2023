@@ -3,45 +3,198 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./AprendX/img/AprendX_logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./AprendX/css/index.css">
-    <title>AprendX | Inical</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Bebas+Neue&display=swap">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel="stylesheet" href="AprendX/css/carousel.css">
+    <link rel="stylesheet" href="AprendX/css/style.css">
+    <link rel="stylesheet" href="AprendX/css/cardindex.css">
+    <title>AprendX | Tela Início</title>
 </head>
 
 <body>
-    <div class="fundoligth"></div>
-    <div class="content">
-        <nav class="navbar" id="menu-X">
-            <img src="./AprendX/img/AprendX_logoWhite.png" width="100px" height="100px" alt="Logo AprendX">
-            <ul class="navbar-nav">
-                <li><a href="#">CATEGORIAS</a></li>
-                <li><a href="#">MENTORIA</a></li>
-                <li><a href="#">CURSOS GRÁTIS</a></li>
-            </ul>
-            <button class="btnDebate">DEBATES</button>
-            <button class="btnCadLog">CADASTRO | LOGIN</button>
-        </nav>
-        <span class="circle-image">
-            <img src="./AprendX/img/Estudo.jpg" />
-        </span>
-        <span class="circle-image-two">
-            <img src="./AprendX/img/dicas-de-estudo.jpg" />
-        </span>
-        <footer>
-            <div class="ft-div">
-                <img src="./AprendX/img/AprendX_logoWhite.png" width="100px" height="100px" alt="Logo AprendX">
-                <ul class="footer-bar">
-                    <li>ENSINE NA APRENDX</li>
-                    <li>SUPORTE</li>
-                    <li>APLICATIVO</li>
-                    <li>QUEM SOMOS</li>
-                    <li>TERMOS</li>
-                    <li>PERGUNTAS FREQUENTES</li>
-                </ul>
+    <div id="container" class="container active">
+        <header class="header">
+            <div class="ctn-logo">
+                <button type="button" id="btn-menu" class="btn-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <img src="./AprendX/img/AprendX_logoWhite.png" width="60" height="60" alt="">
             </div>
-        </footer>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar">
+
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="ctn-btns-header">
+                <button type="button">
+                    Baixar App
+                </button>
+
+                <button type="button">
+                    Entrar
+                </button>
+            </div>
+        </header>
+
+        <nav class="menu-lateral">
+            <a href="javascript:void(0);" class="active">
+                <i class="fas fa-home"></i>
+                Página Principal
+            </a>
+
+            <a href="javascript:void(0);">
+                <i class="fas fa-star"></i>
+                Mentorias
+            </a>
+
+            <a href="javascript:void(0);">
+                <i class="fa-solid fa-book"></i>
+                Cursos
+            </a>
+
+            <hr>
+
+            <a href="javascript:void(0);">
+                <i class="fa-solid fa-comment"></i>
+                Discussões
+            </a>
+
+            <a href="javascript:void(0);">
+                <i class="fa-solid fa-message"></i>
+                Bate-Papos
+            </a>
+        </nav>
+
+        <main class="main">
+            <div class="slider">
+                <input type="radio" name="testimonial" id="t-1">
+                <input type="radio" name="testimonial" id="t-2">
+                <input type="radio" name="testimonial" id="t-3" checked>
+                <input type="radio" name="testimonial" id="t-4">
+                <input type="radio" name="testimonial" id="t-5">
+                <div class="testimonials">
+                    <label class="item" for="t-1">
+                        <img src="AprendX/img/carousel/saude.jpg" alt="picture">
+                        <p>Priorize a saúde: hábitos equilibrados, exercícios e prevenção são pilares para uma vida
+                            plena e duradoura.</p>
+                    </label>
+                    <label class="item" for="t-2">
+                        <img src="AprendX/img/carousel/Geografia.jpg" alt="picture">
+                        <p>Geografia desvenda o planeta, conectando culturas, revelando paisagens. É a chave para
+                            compreender as complexidades do nosso mundo.</p>
+                    </label>
+                    <label class="item" for="t-3">
+                        <img src="AprendX/img/carousel/Matematica.jpg" alt="picture">
+                        <p>Matemática: linguagem universal, revela padrões, guia inovações. Essencial para decifrar a
+                            lógica subjacente ao universo.</p>
+                    </label>
+                    <label class="item" for="t-4">
+                        <img src="AprendX/img/carousel/Portugues.jpg" alt="picture">
+                        <p>Português, língua rica em nuances, une culturas. Comunicar-se preserva identidades,
+                            enriquecendo a diversidade global.</p>
+                    </label>
+                    <label class="item" for="t-5">
+                        <img src="AprendX/img/carousel/programacao.jpg" alt="picture">
+                        <p>Programação traduz ideias em códigos, impulsionando inovações digitais. Lógica e criatividade
+                            é o futuro tecnológico.</p>
+                    </label>
+                </div>
+                <div class="dots">
+                    <label for="t-1"></label>
+                    <label for="t-2"></label>
+                    <label for="t-3"></label>
+                    <label for="t-4"></label>
+                    <label for="t-5"></label>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="box1">
+                    <div class="card">
+                        <div class="body">
+                            <div class="user_save">
+                                <span class="username">from: @Yaya12085</span>
+                                <div class="save">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa ipsum, laoreet quis mollis nec, feugiat in dui. Suspendisse et enim pretium, ullamcorper enim laoreet.</p>
+                        </div>
+                        <div class="img-footer">
+                            <img class="img" src="AprendX/img/Estudo.jpg" alt="">
+                        </div>
+                        <div class="footer">
+                            <div>
+                                <div><i class="fa-solid fa-comment-dots itembar"></i>18</div>
+                                <div><i class="fa-solid fa-thumbtack itembar"></i>7</div>
+                                <div><i class="fa-solid fa-share-nodes itembar"></i>2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="box2">
+                    <div class="currenttopic">
+                        <p class="heading">COMUNIDADE DE ESTUDOS</p>
+                    </div>
+                    <div class="boxtopic">
+                        <div class="bxcard">
+                            <p class="name">Paradoxo do Gato de Schrödinger</p>
+                            <p class="user">Frank Sinatra</p>
+                        </div>
+                        <div class="imgtopic">
+                            <img src="AprendX/img/card/Gato.png" alt="Gato de Schrodinger">
+                        </div>
+                    </div>
+                    <div class="boxtopic">
+                        <div class="bxcard">
+                            <p class="name">Paradoxo do Hotel Infinito</p>
+                            <p class="user">Vitor Edurdo</p>
+                        </div>
+                        <div class="imgtopic">
+                            <img src="AprendX/img/card/hotel.png" alt="Gato de Schrodinger">
+                        </div>
+                    </div>
+                    <div class="boxtopic">
+                        <div class="bxcard">
+                            <p class="name">Calculos de Probabilidades</p>
+                            <p class="user">Luana Ferreira</p>
+                        </div>
+                        <div class="imgtopic">
+                            <img src="AprendX/img/card/Probabilidade.png" alt="Gato de Schrodinger">
+                        </div>
+                    </div>
+                    <div class="boxtopic">
+                        <div class="bxcard">
+                            <p class="name">Nada de Fato é Deletado</p>
+                            <p class="user">Tereza da Cruz</p>
+                        </div>
+                        <div class="imgtopic">
+                            <img src="AprendX/img/card/Lixeira.png" alt="Gato de Schrodinger">
+                        </div>
+                    </div>
+                    <div class="boxtopic">
+                        <div class="bxcard">
+                            <p class="name">Segredos da Matemática</p>
+                            <p class="user">Fools Garden</p>
+                        </div>
+                        <div class="imgtopic">
+                            <img src="AprendX/img/card/Matematica.png" alt="Gato de Schrodinger">
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
-    <script src="./AprendX/js/index.js"></script>
+    </main>
+    </div>
+    <!-- partial -->
+    <script src="AprendX/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/629390665d.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
