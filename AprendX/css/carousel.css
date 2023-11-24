@@ -1,3 +1,10 @@
+:root {
+    --Green: #00BF62;
+    --Black: #000000;
+    --DarkGray: #2D2B29;
+    --public-sans: 'Public Sans';
+}
+
 .slider {
     width: 100%;
 }
@@ -20,7 +27,7 @@
     top: 0;
     position: absolute;
     box-sizing: border-box;
-    background-color: #0A0220;
+    background-color: var(--Black);
     padding: 30px;
     width: 450px;
     text-align: center;

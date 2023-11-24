@@ -2,7 +2,6 @@
     --Green: #00BF62;
     --Black: #000000;
     --DarkGray: #2D2B29;
-    --DarkBlue: #0A0220;
     --public-sans: 'Public Sans';
 }
 
@@ -22,6 +21,10 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+.logoNav{
+    height: 60px;
 }
 
 a {
@@ -61,7 +64,7 @@ button {
     grid-template-columns: auto 1fr auto;
     justify-content: space-between;
     padding: 0 20px;
-    background-color: var(--DarkBlue);
+    background-color: var(--Black);
 }
 
 .header .ctn-logo {
