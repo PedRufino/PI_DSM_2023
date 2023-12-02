@@ -1,9 +1,4 @@
-:root {
-    --Green: #00BF62;
-    --Black: #000000;
-    --DarkGray: #2D2B29;
-    --public-sans: 'Public Sans';
-}
+@import url(../variables.css);
 
 .slider {
     width: 100%;

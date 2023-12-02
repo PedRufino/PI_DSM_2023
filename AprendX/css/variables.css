@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --Background-Default: #fff;
+  --Green: #00BF62;
+  --Gray-Border: #a6a5a4;
+  --DarkGray: #2D2B29;
+  --Black: #000000;
+  --Public-Sans: 'Public Sans'
+}
