@@ -1,6 +1,6 @@
-@import "../css/login.css";
-@import "../css/register.css";
-@import "../css/variables.css";
+@import "./login.css";
+@import "./register.css";
+@import "../variables.css";
 
 * {
   margin: 0;

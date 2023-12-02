@@ -1,6 +1,6 @@
 .main {
   height: 100vh;
-  background-color: var(--DarkBlue);
+  background-color: var(--Black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,13 +18,13 @@
   margin-bottom: 3rem;
 }
 
-.title > .first {
+.title>.first {
   font-family: "Poppins", sans-serif;
   font-size: 7rem;
   color: var(--Background-Default);
 }
 
-.title > .second {
+.title>.second {
   font-family: "Poppins", sans-serif;
   font-size: 7rem;
   color: var(--Green);
@@ -44,7 +44,9 @@
   color: var(--Background-Default);
 }
 
-.login-box {
+.login-box,
+.name-box,
+.mail-box {
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -53,28 +55,18 @@
   border-radius: 1rem;
 }
 
-.username-box,
-.password-box {
-  position: relative;
-}
-
-.icon {
-  position: absolute;
-  top: 47%;
-  filter: invert(71%) sepia(7%) saturate(46%) hue-rotate(349deg) brightness(94%)
-    contrast(83%);
-}
-
-.username-box > label,
-.password-box > label {
+.username-box>label,
+.email>label,
+.password-box>label {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--Gray-Border);
 }
 
-.username-box > input,
-.password-box > input {
+.username-box>input,
+.email>input,
+.password-box>input {
   border: none;
   border-bottom: 1px solid var(--Gray-Border);
   padding: 0.2em 0;
@@ -91,21 +83,22 @@
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   transition: 0.2s;
+  width: 100%;
 }
 
-.btn-login {
+.btn-register {
   background-color: var(--Green);
   box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
   margin-top: 2rem;
 }
 
-.btn-login:hover {
+.btn-register:hover {
   transition: 0.2s;
   transform: translateY(-10%);
   box-shadow: rgba(0, 0, 0, 0.45) 10px 10px 20px;
 }
 
-.btn-login:active {
+.btn-register:active {
   color: var(--Background-Default);
   transition: 0.2s;
   transform: translateY(10%);
@@ -117,7 +110,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.forgot-password > a {
+.forgot-password>a {
   text-decoration: none;
   color: var(--Black);
 }
@@ -129,7 +122,7 @@
   font-size: 1.2rem;
 }
 
-.sign-up-box > span {
+.sign-up-box>span {
   color: var(--Background-Default);
 }
 
