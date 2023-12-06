@@ -1,0 +1,335 @@
+@import url(../variables.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logoNav{
+    height: 60px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'header header'
+        'menu content';
+    grid-template-columns: minmax(90px, 90px) auto;
+    grid-template-rows: 60px auto;
+    margin: 0 auto;
+    min-height: 100vh;
+    transition: grid-template-columns 0.3s ease-in-out;
+    width: 100%;
+}
+
+.container.active {
+    grid-template-columns: minmax(300px, 18%) auto;
+}
+
+/* Header */
+.header {
+    align-items: center;
+    display: grid;
+    grid-area: header;
+    grid-gap: 20px;
+    grid-template-areas: 'logo search icons';
+    grid-template-columns: auto 1fr auto;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--Black);
+}
+
+.header .ctn-logo {
+    align-items: center;
+    display: flex;
+    grid-area: logo;
+}
+
+.header .ctn-logo .btn-menu {
+    color: var(--Green);
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    width: 50px;
+}
+
+.header .ctn-logo .btn-menu:hover,
+.header .ctn-logo .btn-menu:focus,
+.header .ctn-logo .btn-menu:active {
+    background-color: var(--Green);
+    color: white;
+}
+
+.header .ctn-logo .logo {
+    font: 400 20px 'Bebas Neue', cursive;
+}
+
+.header .search-bar {
+    align-items: center;
+    display: flex;
+    grid-area: search;
+    justify-content: center;
+}
+
+.header .search-bar input {
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid var(--Green);
+    font: 400 20px 'Open Sans', sans-serif;
+    height: 35px;
+    line-height: 35px;
+    min-width: 60%;
+    padding: 0 15px;
+}
+
+.header .search-bar button {
+    border-radius: 0px 5px 5px 0px;
+    background-color: white;
+    border: 1px solid var(--Green);
+    border-left-style: none;
+    color: var(--Green);
+    cursor: pointer;
+    height: 35px;
+    padding: 0 20px;
+}
+
+.header .search-bar button:hover,
+.header .search-bar button:focus,
+.header .search-bar button:active {
+    background-color: var(--Green);
+    color: white;
+}
+
+.header .ctn-btns-header {
+    align-items: center;
+    display: flex;
+    grid-area: icons;
+}
+
+.header .ctn-btns-header button {
+    margin-right: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid var(--Green);
+    color: var(--Green);
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header .ctn-btns-header button:hover,
+.header .ctn-btns-header button:focus,
+.header .ctn-btns-header button:active {
+    background-color: var(--Green);
+    color: white;
+}
+
+.header .ctn-btns-header .btn-avatar {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+.header .ctn-btns-header .btn-avatar img {
+    border-radius: 100px;
+    vertical-align: top;
+    width: 100%;
+}
+
+/* Menu lateral */
+.menu-lateral {
+    grid-area: menu;
+    overflow: hidden;
+    padding-top: 12px
+}
+
+.menu-lateral a {
+    color: #000000;
+    display: block;
+    min-width: 800px;
+    padding: 15px 35px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu-lateral a:hover,
+.menu-lateral a:focus,
+.menu-lateral a:active {
+    background-color: #e5e5e5;
+}
+
+.menu-lateral a.active {
+    background-color: #e5e5e5;
+    font-weight: 700;
+}
+
+.menu-lateral a i {
+    margin-right: 2rem;
+    text-align: center;
+    width: 20px;
+}
+
+.menu-lateral a.active i {
+    color: var(--Green);
+}
+
+.menu-lateral hr {
+    border: 1px solid #dfdfdf;
+    margin: 20px 0;
+}
+
+/* Contenido principal */
+.main {
+    grid-area: content;
+    padding: 40px;
+}
+
+/* Mediqueries */
+
+@media screen and (max-width: 1200px) {
+
+    .header .ctn-logo .logo span {
+        display: none;
+    }
+
+    .header .search-bar input {
+        min-width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-rows: auto;
+    }
+
+    .header {
+        grid-template-areas: 'logo icons'
+            'search search';
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .header .ctn-logo .logo span {
+        display: inline;
+    }
+
+    .header .search-bar input {
+        min-width: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header .ctn-logo .logo span {
+        display: none;
+    }
+}
+
+/* Columns */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* Cards Left */
+
+.boxtopic {
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    transform: rotate(180deg);
+    justify-content: right;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+}
+
+.boxtopic:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.currenttopic {
+    display: flex;
+    margin: 1em;
+}
+
+.heading {
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    align-self: center;
+}
+
+.imgtopic {
+    position: relative;
+    margin-right: 1em;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(233, 232, 232);
+    align-self: center;
+    border-radius: 5px;
+}
+
+.imgtopic img {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    transform: rotate(180deg);
+}
+
+.bxcard {
+    position: relative;
+    transform: rotate(180deg);
+    margin-right: 1em;
+    color: black;
+    align-self: center;
+}
+
+.user {
+    font-size: 0.6em;
+}
