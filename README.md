@@ -1,8 +1,6 @@
 # PI_DSM_2023
 Este projeto foi desenvolvido como parte dos requisitos obrigatórios do curso de Graduação em Desenvolvimento de Software Multiplataforma.
 
-Site do Projeto: [AprendX](https://pedneto.github.io/PI_DSM_2023/)
-
  <h3>Este projeto se concentra em conseguir notas em três disciplinas:  <br></h3>
   • Engenharia de Software I;<br>
   • Desenvolvimento Web I;<br>
