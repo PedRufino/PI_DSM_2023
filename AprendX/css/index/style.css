@@ -127,6 +127,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 150px;
 }
 
 .footer img {
@@ -165,6 +166,30 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 10px;
+}
+
+.img-prof{
+    width: 500px;;
+    object-fit: cover;
+    margin-right: 27px;
+}
+
+.seja-prof{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.text-prof{
+    color: white;
+    text-align: left !important;
+    margin-left: 10px;
+    font-family: var(--Public-Sans);
+    font-size: 25px;
+}
+
+.info-sobre button{
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1000px) {
